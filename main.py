@@ -6,7 +6,7 @@ class Circle:
     def __init__(self):
         self.vx = random.randint(-3, 3)
         self.vy = random.randint(-3, 3)
-        self.w = random.randint(30, 50)
+        self.w = random.randint(30, 70)
         self.h = int(2.28 * self.w)
         self.x = random.randint(0, w - self.h)
         self.y = random.randint(0, h - self.w)
@@ -31,7 +31,6 @@ class Circle:
 
     def draw(self):
         screen.blit(self.logo, (self.x, self.y))
-        pygame.draw.rect(screen, (255, 255, 255), (self.x, self.y, self.h, self.w), 1)
 
 
 pygame.init()
